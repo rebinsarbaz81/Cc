@@ -8,7 +8,7 @@
 	var awesomplete = createCommonjsModule(function (module) {
 	/**
 	 * Simple, lightweight, usable local autocomplete library for modern browsers
-	 * Because there werenâ€™t enough autocomplete scripts in the world? Because Iâ€™m completely insane and have NIH syndrome? Probably both. :P
+	 * Because there weren’t enough autocomplete scripts in the world? Because I’m completely insane and have NIH syndrome? Probably both. :P
 	 * @author Lea Verou http://leaverou.github.io/awesomplete
 	 * MIT license
 	 */

@@ -73,16 +73,16 @@ $(document).ready(() => {
                 var symbol = '$';
                 }
                 else if (o === "eur") {
-                var symbol = 'â‚¬';
+                var symbol = '€';
                 }
                 else if (o === "gbp") {
-                var symbol = 'Â£';
+                var symbol = '£';
                 }
                 else if (o === "cad") {
                 var symbol = 'Can$';
                 }
                 else if (o === "inr") {
-                var symbol = 'â‚¹';
+                var symbol = '₹';
                 }
           void 0 === Array.prototype.sameAs &&
             (Array.prototype.sameAs = function () {
@@ -103,8 +103,6 @@ $(document).ready(() => {
                         t +
                         "&amt=" +
                         s +
-                        "&sym=" +
-                        symbol +
                         "&tgid=" +
                         tg_id +
                         "&type=" +
@@ -116,7 +114,7 @@ $(document).ready(() => {
                       async: !0,
                       success: function (t) {
                         var i;
-                        t.match("âœ˜CHARGED")
+                        t.match("✘CHARGED")
                           ? (p(),
                             ht++,
                             (i = t + ""),
@@ -124,7 +122,7 @@ $(document).ready(() => {
                             notify.success(t, "", {
                               duration: 3e3,
                             }))
-                          : t.match("âœ˜CVV")
+                          : t.match("✘CVV")
                           ? (p(),
                             y++,
                             (i = t + ""),
@@ -132,7 +130,7 @@ $(document).ready(() => {
                             notify.success(t, "", {
                               duration: 3e3,
                             }))
-                          : t.match("âœ˜CCN")
+                          : t.match("✘CCN")
                           ? (p(),
                             C++,
                             (function (e) {
@@ -163,7 +161,7 @@ $(document).ready(() => {
                               fileName: "darkx_cvv",
                               fileExten: "txt",
                               fileData: [
-                                "sá´›Ê€Éªá´˜á´‡\n--------------\n".replace(
+                                "sᴛʀɪᴘᴇ\n--------------\n".replace(
                                   /^\s*\n/gm,
                                   ""
                                 ) +
@@ -183,7 +181,7 @@ $(document).ready(() => {
                                 fileName: "darkx_ccn",
                                 fileExten: "txt",
                                 fileData: [
-                                  "sá´›Ê€Éªá´˜á´‡\n--------------\n".replace(
+                                  "sᴛʀɪᴘᴇ\n--------------\n".replace(
                                     /^\s*\n/gm,
                                     ""
                                   ) +
